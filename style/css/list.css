@@ -160,13 +160,23 @@ header span{
 	line-height: 39px;
 	cursor: pointer;
 	border-bottom: 1px solid #f0f0f0;
+	transition: all 0.3s ease-out 0s;
 }
+
 .list1 aside a{
-	
 	padding-left: 18px;
 	color: #787777;
+	
+}
+.list1 aside p:hover{
+	padding-left: 10px;
 }
 .list1 aside p:hover a{
+	/* margin-left: 20px; */
+	/* padding-left: 10px; */
+	border-left: 3px solid #042d3d;
+}
+.list1 aside p:first-of-type a{
 	border-left: 3px solid #042d3d;
 }
 .list1>div ul{
@@ -185,6 +195,11 @@ header span{
 .list1>div ul li .listL{
 	width: 777px;
 	padding-right: 35px;
+	transition: all 0.3s ease-out 0s;
+}
+.list1>div ul li:hover .listL{
+	padding-left: 20px;
+	/* transform: all .5s; */
 }
 .list1>div ul li .listL h2{
 	color: #767676;
@@ -195,6 +210,7 @@ header span{
 	color: #9b9d9f;
 	/* height: 20px; */
 	line-height: 20px;
+	width: 720px;
 }
 .list1>div ul li .listR h4{
 	height: 17px;
@@ -263,6 +279,7 @@ header span{
 		height: auto!important;
 	}
 	.list1 .listL p{
+		width: 100%!important;
 		margin-top: 10px;
 		text-indent: 2em;
 		font-size: 14px;
